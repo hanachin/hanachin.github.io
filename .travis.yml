@@ -18,6 +18,7 @@ script:
 
 after_success:
   - cd build
+  - echo "task :default" > Rakefile
   - git init
   - git add --all
   - 'git commit -m ":sparkles: Update from Travis CI :sparkles:"'
