@@ -3,7 +3,7 @@ class Hanachin
     [
       200,
       { 'Content-Type' => 'text/plain' },
-      ['Hello World']
+      ['クリスマスイブなのでtravisいじります']
     ]
   end
 end
