@@ -46,7 +46,7 @@ module.exports = (grunt) ->
         ]
 
       gruntfile:
-        files: ["Gruntfile.js"]
+        files: ["Gruntfile.coffee"]
 
       livereload:
         options:
