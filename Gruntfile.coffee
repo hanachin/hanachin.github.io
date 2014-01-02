@@ -7,24 +7,24 @@
 # use this if you want to recursively match all subfolders:
 # 'test/spec/**/*.js'
 module.exports = (grunt) ->
-  
+
   # Load grunt tasks automatically
   require("load-grunt-tasks") grunt
-  
+
   # Time how long tasks take. Can help when optimizing build times
   require("time-grunt") grunt
-  
+
   # Define the configuration for all the tasks
   grunt.initConfig
-    
+
     # Project settings
     yeoman:
-      
+
       # configurable paths
       app: require("./bower.json").appPath or "app"
       dist: "dist"
 
-    
+
     # Watches files for changes and runs tasks based on the changed files
     watch:
       coffee:
@@ -59,12 +59,12 @@ module.exports = (grunt) ->
           "<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}"
         ]
 
-    
+
     # The actual grunt server settings
     connect:
       options:
         port: 9000
-        
+
         # Change this to '0.0.0.0' to access the server from outside.
         hostname: "localhost"
         livereload: 35729
@@ -90,7 +90,7 @@ module.exports = (grunt) ->
         options:
           base: "<%= yeoman.dist %>"
 
-    
+
     # Make sure code styles are up to par and there are no obvious mistakes
     jshint:
       options:
@@ -99,7 +99,7 @@ module.exports = (grunt) ->
 
       all: ["Gruntfile.js"]
 
-    
+
     # Empties folders to start fresh
     clean:
       dist:
@@ -114,7 +114,7 @@ module.exports = (grunt) ->
 
       server: ".tmp"
 
-    
+
     # Add vendor prefixed styles
     autoprefixer:
       options:
@@ -128,14 +128,14 @@ module.exports = (grunt) ->
           dest: ".tmp/styles/"
         ]
 
-    
+
     # Automatically inject Bower components into the app
     "bower-install":
       app:
         html: "<%= yeoman.app %>/index.html"
         ignorePath: "<%= yeoman.app %>/"
 
-    
+
     # Compiles CoffeeScript to JavaScript
     coffee:
       options:
@@ -160,7 +160,7 @@ module.exports = (grunt) ->
           ext: ".js"
         ]
 
-    
+
     # Compiles Sass to CSS and generates necessary files if requested
     compass:
       options:
@@ -186,7 +186,7 @@ module.exports = (grunt) ->
         options:
           debugInfo: true
 
-    
+
     # Renames files for browser caching purposes
     rev:
       dist:
@@ -198,7 +198,7 @@ module.exports = (grunt) ->
             "<%= yeoman.dist %>/styles/fonts/*"
           ]
 
-    
+
     # Reads HTML for usemin blocks to enable smart builds that automatically
     # concat, minify and revision files. Creates configurations in memory so
     # additional tasks can operate on them
@@ -207,7 +207,7 @@ module.exports = (grunt) ->
       options:
         dest: "<%= yeoman.dist %>"
 
-    
+
     # Performs rewrites based on rev and the useminPrepare configuration
     usemin:
       html: ["<%= yeoman.dist %>/{,*/}*.html"]
@@ -215,7 +215,7 @@ module.exports = (grunt) ->
       options:
         assetsDirs: ["<%= yeoman.dist %>"]
 
-    
+
     # The following *-min tasks produce minified files in the dist folder
     imagemin:
       dist:
@@ -253,7 +253,7 @@ module.exports = (grunt) ->
           dest: "<%= yeoman.dist %>"
         ]
 
-    
+
     # Allow the use of non-minsafe AngularJS files. Automatically makes it
     # minsafe compatible so Uglify does not destroy the ng references
     ngmin:
@@ -265,13 +265,13 @@ module.exports = (grunt) ->
           dest: ".tmp/concat/scripts"
         ]
 
-    
+
     # Replace Google CDN references
     cdnify:
       dist:
         html: ["<%= yeoman.dist %>/*.html"]
 
-    
+
     # Copies remaining files to places other tasks can use
     copy:
       dist:
@@ -305,7 +305,7 @@ module.exports = (grunt) ->
         dest: ".tmp/styles/"
         src: "{,*/}*.css"
 
-    
+
     # Run some tasks in parallel to speed up the build process
     concurrent:
       server: [
@@ -323,7 +323,7 @@ module.exports = (grunt) ->
         "svgmin"
       ]
 
-    
+
     # By default, your `index.html`'s <!-- Usemin block --> will take care of
     # minification. These next options are pre-configured if you do not wish
     # to use the Usemin blocks.
@@ -349,7 +349,7 @@ module.exports = (grunt) ->
     # concat: {
     #   dist: {}
     # },
-    
+
     # Test settings
     karma:
       unit:
