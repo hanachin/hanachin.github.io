@@ -11,5 +11,8 @@ angular.module('hanachingithubioApp', [
       .when '/diary',
         templateUrl: 'views/diary.html'
         controller: 'DiaryCtrl'
+      .when '/md/:md*',
+        templateUrl: 'views/md.html'
+        controller: 'MdCtrl'
       .otherwise
         redirectTo: '/'
