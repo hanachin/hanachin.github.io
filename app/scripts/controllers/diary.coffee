@@ -1,9 +1,9 @@
 'use strict'
 
 angular.module('hanachingithubioApp')
-  .controller 'DiaryCtrl', ($scope) ->
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate'
-      'AngularJS'
-      'Karma'
-    ]
+  .controller 'DiaryCtrl', ($scope, $http) ->
+    $scope.diaryList = []
+
+    $http.get('scripts/diaryList.json')
+    .success (diaryList) ->
+      $scope.diaryList = diaryList

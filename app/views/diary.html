@@ -1,1 +1,8 @@
-<p>This is the diary view.</p>
+<header>
+  <h1>日記</h1>
+</header>
+<ul>
+  <li ng-repeat="diary in diaryList">
+    <a href="#{{diary}}">{{diary}}</a>
+  </li>
+</ul>

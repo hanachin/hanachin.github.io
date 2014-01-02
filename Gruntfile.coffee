@@ -56,8 +56,13 @@ module.exports = (grunt) ->
           "<%= yeoman.app %>/{,*/}*.html"
           ".tmp/styles/{,*/}*.css"
           ".tmp/scripts/{,*/}*.js"
+          ".tmp/scripts/{,*/}*.json"
           "<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}"
         ]
+
+      diary:
+        files: ['diary/*.md']
+        tasks: ['generateDiaryListJson', 'copyDiary']
 
 
     # The actual grunt server settings
@@ -297,6 +302,11 @@ module.exports = (grunt) ->
             dest: "<%= yeoman.dist %>/images"
             src: ["generated/*"]
           }
+          {
+            expand: true
+            dest: "<%= yeoman.dist %>/diary"
+            src: ["diary/*.md"]
+          }
         ]
 
       styles:
@@ -304,7 +314,6 @@ module.exports = (grunt) ->
         cwd: "<%= yeoman.app %>/styles"
         dest: ".tmp/styles/"
         src: "{,*/}*.css"
-
 
     # Run some tasks in parallel to speed up the build process
     concurrent:
@@ -365,6 +374,7 @@ module.exports = (grunt) ->
     grunt.task.run [
       "clean:server"
       "bower-install"
+      "diary"
       "concurrent:server"
       "autoprefixer"
       "connect:livereload"
@@ -385,6 +395,7 @@ module.exports = (grunt) ->
   grunt.registerTask "build", [
     "clean:dist"
     "bower-install"
+    "diary"
     "useminPrepare"
     "concurrent:dist"
     "autoprefixer"
@@ -403,3 +414,16 @@ module.exports = (grunt) ->
     "test"
     "build"
   ]
+  grunt.registerTask 'diary', ['generateDiaryListJson', 'copyDiary']
+  grunt.registerTask 'generateDiaryListJson', ->
+    diaryList = grunt.file.expand 'diary/*.md'
+    grunt.file.write(grunt.config.process("<%= yeoman.app %>/scripts/diaryList.json"), JSON.stringify diaryList)
+
+  grunt.registerTask 'copyDiary', ->
+    grunt.file.copy(grunt.config.process("<%= yeoman.app %>/scripts/diaryList.json"), '.tmp/scripts/diaryList.json')
+
+    for file in grunt.file.expandMapping('diary/*.md', grunt.config.process("<%= yeoman.dest %>")) when file.src.length isnt 0
+      grunt.file.copy(file.src[0], file.dest)
+
+    for file in grunt.file.expandMapping('diary/*.md', '.tmp') when file.src.length isnt 0
+      grunt.file.copy(file.src[0], file.dest)
