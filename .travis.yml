@@ -19,6 +19,7 @@ script:
 after_success:
   - cd build
   - echo "task :default" > Rakefile
+  - echo "www.hanach.in" > CNAME
   - git init
   - git add --all
   - 'git commit -m ":sparkles: Update from Travis CI :sparkles:"'
