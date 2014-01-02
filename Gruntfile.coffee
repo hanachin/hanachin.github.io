@@ -304,8 +304,12 @@ module.exports = (grunt) ->
           }
           {
             expand: true
-            dest: "<%= yeoman.dist %>/diary"
+            dest: "<%= yeoman.dist %>"
             src: ["diary/*.md"]
+          }
+          {
+            dest: "<%= yeoman.dist %>/scripts/diaryList.json"
+            src: ["<%= yeoman.app %>/scripts/diaryList.json"]
           }
         ]
 
@@ -421,9 +425,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'copyDiary', ->
     grunt.file.copy(grunt.config.process("<%= yeoman.app %>/scripts/diaryList.json"), '.tmp/scripts/diaryList.json')
-
-    for file in grunt.file.expandMapping('diary/*.md', grunt.config.process("<%= yeoman.dest %>")) when file.src.length isnt 0
-      grunt.file.copy(file.src[0], file.dest)
 
     for file in grunt.file.expandMapping('diary/*.md', '.tmp') when file.src.length isnt 0
       grunt.file.copy(file.src[0], file.dest)
