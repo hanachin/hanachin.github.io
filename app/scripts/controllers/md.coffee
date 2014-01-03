@@ -5,4 +5,4 @@ angular.module('hanachingithubioApp')
     $scope.params = $routeParams
     $http.get($routeParams.md)
     .success (body) ->
-      $scope.body = $sce.trustAsHtml markdown.toHTML body
+      $scope.body = $sce.trustAsHtml marked body
