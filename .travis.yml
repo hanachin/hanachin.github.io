@@ -15,7 +15,7 @@ env:
 
 script:
   - npm install
-  - bower install
+  - npm run bower-install
   - grunt build
 
 after_success:

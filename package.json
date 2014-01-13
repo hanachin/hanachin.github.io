@@ -2,7 +2,8 @@
   "name": "hanachingithubio",
   "version": "0.0.0",
   "dependencies": {
-    "generator-diary": "git://github.com/hanachin/generator-diary"
+    "generator-diary": "git://github.com/hanachin/generator-diary",
+    "bower": "~1.2.8"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -38,6 +39,7 @@
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "bower-install": "bower install"
   }
 }
