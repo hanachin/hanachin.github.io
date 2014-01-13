@@ -14,10 +14,11 @@ env:
     - secure: "KSymil+YkA5PhLtQxUhz3XqI1ezbs5LRk5m5LowP4oGmanzeettxTgNNdGnYDPIja/7IqOANEzPMshw7OPVVVaW85UbeOCT+n+PblsFOpjJR5NYhaxhi96crgy/Vwf5sYsUXITZkKwCirzuxy1C1NPyjF+2Fuhp1eWUC22F51/c="
 
 script:
-  - bundle exec rspec
+  - npm install
+  - grunt build
 
 after_success:
-  - cd build
+  - cd dist
   - echo "task :default" > Rakefile
   - echo "www.hanach.in" > CNAME
   - git init
