@@ -1,5 +1,9 @@
 'use strict'
 
+WebFont.load
+  google:
+    families: ['Overlock:700:latin']
+
 angular.module('hanachingithubioApp', [
   'ngRoute'
 ])
