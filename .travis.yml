@@ -14,9 +14,7 @@ env:
     - secure: "KSymil+YkA5PhLtQxUhz3XqI1ezbs5LRk5m5LowP4oGmanzeettxTgNNdGnYDPIja/7IqOANEzPMshw7OPVVVaW85UbeOCT+n+PblsFOpjJR5NYhaxhi96crgy/Vwf5sYsUXITZkKwCirzuxy1C1NPyjF+2Fuhp1eWUC22F51/c="
 
 script:
-  - npm install
-  - npm run bower-install
-  - grunt build
+  - bundle exec jekyll build -d dist
 
 after_success:
   - cd dist
