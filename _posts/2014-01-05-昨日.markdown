@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "昨日"
+date:   2014-01-05
+categories: diary
+---
 # 昨日
 人と話すと作業進まないですね。
 

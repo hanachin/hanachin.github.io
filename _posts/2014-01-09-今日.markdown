@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "今日"
+date:   2014-01-09
+categories: diary
+---
 # 今日
 移動と(続)環境構築。環境構築しすぎである
 

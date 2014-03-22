@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "今日"
+date:   2014-01-11
+categories: diary
+---
 # 今日
 昼過ぎに起きた、寒い。けだるさはない。
 

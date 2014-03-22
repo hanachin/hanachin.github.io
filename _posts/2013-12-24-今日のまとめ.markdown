@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "今日のまとめ"
+date:   2013-12-24
+categories: diary
+---
 # 今日のまとめ
 ## Daily Hit
 - 小さなバグを1つ修正した

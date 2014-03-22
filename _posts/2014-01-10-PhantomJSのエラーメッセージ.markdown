@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "PhantomJSのエラーメッセージ"
+date:   2014-01-10
+categories: diary
+---
 # PhantomJSのエラーメッセージ
 
 Homebrewではパッチを当ててビルドしているよう。

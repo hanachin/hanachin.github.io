@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Docker入れる"
+date:   2014-01-19
+categories: diary
+---
 # Docker入れる
 - [公式のDocker client for OSXがリリース | SOTA](http://deeeet.com/writing/2014/01/10/docker-from-osx/)
 

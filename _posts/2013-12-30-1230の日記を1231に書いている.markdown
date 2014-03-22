@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "12/30の日記を12/31に書いている"
+date:   2013-12-30
+categories: diary
+---
 # 12/30の日記を12/31に書いている
 
 - kimihitoさんにjQuery mobileのcontrolgroupでタブを作っていて、アクティブタブを一つ上に飛び出させたいがやり方がわからない旨尋ねられたのでサンプルコードを書いた

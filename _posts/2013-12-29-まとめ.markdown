@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "まとめ"
+date:   2013-12-29
+categories: diary
+---
 # まとめ
 ## DailyHit
 - 彼女への誕生日プレゼントを購入した

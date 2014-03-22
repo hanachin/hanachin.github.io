@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "AngularJSを勉強している"
+date:   2014-01-01
+categories: diary
+---
 # AngularJSを勉強している
 
 買った本を読みながら勉強している

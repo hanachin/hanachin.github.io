@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "あまりかかない日記"
+date:   2013-12-28
+categories: diary
+---
 # あまりかかない日記
 なんだろう、だんだんだるくなってくるmdで書くの。
 

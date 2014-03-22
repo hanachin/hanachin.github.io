@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "DailyHit"
+date:   2014-01-12
+categories: diary
+---
 # DailyHit
 - 同級生を観光につれていった
 - `yo diary`で今日の日付のmd作れるようになった

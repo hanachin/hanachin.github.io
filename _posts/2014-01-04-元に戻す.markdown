@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "元に戻す"
+date:   2014-01-04
+categories: diary
+---
 # 元に戻す
 1/6に向けて調子を元に戻す。
 
