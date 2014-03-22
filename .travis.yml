@@ -20,7 +20,7 @@ after_success:
   - cd dist
   - echo "task :default" > Rakefile
   - echo "www.hanach.in" > CNAME
-  - echo "rvm: 2.1.1" > .travis.yml
+  - 'echo "rvm: 2.1.1" > .travis.yml'
   - git init
   - git add --all
   - 'git commit -m ":sparkles: Update from Travis CI :sparkles:"'
