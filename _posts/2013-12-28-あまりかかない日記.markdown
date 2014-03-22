@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "あまりかかない日記"
+date:   2013-12-28
+categories: diary
+---
+# あまりかかない日記
+なんだろう、だんだんだるくなってくるmdで書くの。
+
+## やった
+### TUTORIAL: BUILDING A WEBAPP WITH YEOMAN
+テストのところはkarmaの設定かえなきゃ通らなさそうだったので、見るだけにとどめた。
+それにしても便利だな。使いこなすまでに時間かかりそう。っていうかAngular界隈、便利...
+ついていかねば。
+
+### AN INTRO TO YEOMAN SUB-GENERATORS
+糞便利や...
+そして典型的なBackboneのお作法に自分のプロジェクトちゃんと沿ってることを確認する。
+
+## KPT
+### Keep
+- 実家の掃除。一度では終わらない。
+- 食べたあとすぐ洗う(1回失敗した)
+
+### Problems
+- マクドナルドが家の近くにあるので毎日食べたくなる。怖い。
+
+### Try
+- AngularJSのドキュメントもっとよむ
+- AngularJSのチュートリアルもっとやる

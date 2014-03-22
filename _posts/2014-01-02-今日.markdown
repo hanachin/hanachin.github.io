@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "今日"
+date:   2014-01-02
+categories: diary
+---
+# 今日
+Gruntを勉強している。便利そう。
+これも今勉強してもChefと同じで使わなくなったら忘れてしまいそうな気がするからいやだなあ。
+
+とりあえずMarkdownプレビューできたけどmarkdown-jsのbower.jsonがないせいでgrunt buildするとmarkdown.jsを読むscriptタグが抜け落ちてしまう。
+そこはあとで治そうと思う. sourceにマージした。
+
+## ドメイン
+`http://www.hanach.in/`でGitHub PagesにアクセスできるようにCNAMEファイルを設置した。
+
+- [Setting up a custom domain with Pages · GitHub Help](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)
+
+name.comにnameserverおいてたんだけどRoute 53使うようにしてみた。
+新しくドメインとったときも全部Route 53で管理したい。
+それぞれの管理画面にアクセスして手動で設定するのかなりめんどい。
+ゆくゆくはドメインの管理も自動化したい...
+
+## Grunt
+### ディレクトリのファイルをコピーする
+`grunt.file.expnadMapping`を使う
+
+### [stephenplusplus/grunt-bower-install](https://github.com/stephenplusplus/grunt-bower-install)
+bower、新し目なので、古いライブラリだと`bower.json`や`component.json`が用意されていないことも多い。
+`bower.json`などの中で`main`を指定していればうまく依存解決できるんだけど、そうじゃない場合はダメっぽい。
+forkして`bower.json`追加して...などの作業が必要そう。
+
+## 雑感
+デファクトスタンダードな感じになってみんなが使ってれば便利だろうな。yoとかbowerとかgruntの世界。
+yoが生成するGruntfile参考になる。ただ、みんながみんなbowerとか対応してるわけじゃないので、フリーライダーな僕にはつらい。
+自分で`bower.json`とか書いてPull Request出せばいいだけの話なんだけど。
+
+AngularJS、filterとかdirectiveとかちゃんと分かってないから、そのせいで再利用性の低いものを書いてしまった。
+テキストをmarkdownに変換するとかそういうのはfilterにしたほうがよさそうだった。
+
+- [vpegado/angular-markdown-filter](https://github.com/vpegado/angular-markdown-filter)
+- [PatrickHeneise/angular-markdown](https://github.com/PatrickHeneise/angular-markdown)
+
+もうちょい枯れてからさわろうかな...(老害)と思ってたけど、こういう再利用性高い形で書く発想とか、早めに身につけておいたほうがいい気がする。
+手を動かすの遅いぶん、勉強して実装する技術あげていかないと、自分がダメになってしまう恐怖ある。
+腐ってると感じたらすでに腐ってるんだ的な話が何かの本に載ってたし、もうダメになってる感じはあるから手遅れかもしれないけど。
+
+## 他の住人
+自己解凍rails作っててすごい。ああいうとりあえずやってみる系の最近やってなくて技術力の衰え感じる。

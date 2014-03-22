@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "大晦日"
+date:   2013-12-31
+categories: diary
+---
+# 大晦日
+
+昨日のように一日の終わりで書こうとすると忘れてしまいそうなので、何度か更新しようと思う
+
+今日やりたいことは
+
+- Huluが切れる前にSPEC劇場版天を見たい
+- 年越しそばを彼女の実家の実家で食べる
+
+までは決まっていて、他何するかは未定。
+
+## 今おぼえてる今年のできごと
+- 痩せた
+- リバウンドした
+- 東京へ行くことが多かった
+- 彼女と同棲した
+- 炎上
+- MacBook Air電池が死んだ
+
+## 来年やっておきたいこと
+- 体重をもう一度72kg程度まで落とす
+- 歯の修理
+
+## DailyUnko
+- デプロイ時にやっておこうと思っていた作業を忘れてしまった
+  - デプロイの間隔が長くてその間に忘却の彼方
+  - こういうのMigrationに組み込めばいいのか、DBとは関係ないものをどう組み込めばいいのだろう...
+
+## 開発
+年越しそばを食べに行くまでの間開発する。
+とりあえずMDを表示できるようにしたい。
+
+- `bower install`の`--save`オプション便利。適当につけてくれる。
+
+## やったこと
+- AngularJSのチュートリアル少し
+- hanach.inのネームサーバーをname.comからRoute 53に変更した
+  - こないだ障害あったので不安ではある
+  - 管理めんどくさいから全部AWSで管理したい
+- セールなので買ってみた→[Mastering Web Application Development with AngularJS | Packt Publishing](https://www.packtpub.com/angularjs-web-application-development/book)
+
+## 読みたいコード
+ - 黒歴史クリーナー [cohakim/clean_them_all](https://github.com/cohakim/clean_them_all/)
+
+## あとで読みたいブログ
+- [AngularJS Ninja](http://angularjsninja.com/)
+- [PostgreSQL Deep Dive: これからPostgreSQLを始める人のための自習用オンライン無料コンテンツ](http://pgsqldeepdive.blogspot.jp/2013/12/online-free-materials.html)
+- [発表資料 | クックパッド開発者ブログ](http://techlife.cookpad.com/presentations/)
+- [serverspec インフラ層のテスト項目を考える | Ore no homepage](https://hiroakis.com/blog/2013/12/24/serverspec-%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E5%B1%A4%E3%81%AE%E3%83%86%E3%82%B9%E3%83%88%E9%A0%85%E7%9B%AE%E3%82%92%E8%80%83%E3%81%88%E3%82%8B/)
+- [Gosuke Miyashita](http://mizzy.org/)

@@ -1,9 +1,8 @@
 source 'https://rubygems.org/'
 
-ruby '2.1.0'
+ruby '2.1.1'
 
-# grunt task
-gem 'compass'
+gem 'jekyll'
 
 group :development do
   gem 'travis'
