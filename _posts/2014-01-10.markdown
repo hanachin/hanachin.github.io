@@ -1,4 +1,5 @@
-Homebrewのphantomjsではエラーメッセージ出まくるのがなおったよう。
+# PhantomJSのエラーメッセージ
+
 Homebrewではパッチを当ててビルドしているよう。
 僕はphantomenvを使ってphantomjsを入れている。
 phantomenvはbinaryをdownloadしてきているだけっぽい。
