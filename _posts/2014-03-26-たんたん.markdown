@@ -12,6 +12,8 @@ categories: diary
 
 thanksされるの気持ちいいな。
 
+そのあと、追加位置がまずってたみたいで、[sortされてるコミット](https://github.com/atom/language-ruby/commit/af026af391f630d9f1980b55d42b705ba2987fc0)があった。勉強になる。次から気をつけたい。
+
 ## マージした
 - [fix typo by bash0C7 · Pull Request #48 · okinawarb/rubima](https://github.com/okinawarb/rubima/pull/48)
 
@@ -40,3 +42,6 @@ Markdownにたりなさそうなのは
 - 豊富なインライン命令
 
 あたりか
+
+## Qiita::Team
+ようやく使いはじめた。
