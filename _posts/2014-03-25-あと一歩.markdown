@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "あと一歩"
+date:   2014-03-25 10:09:30
+categories: diary
+---
+# あと一歩
+難しい。
+
+## gem作りたい欲
+### ActionView::Template
+`using`つかえない
+
+### Rails知らねばgemも書けぬ
+[Rails::Railtie](http://api.rubyonrails.org/classes/Rails/Railtie.html)
+
+`ActionView`が初期化されたあとでgemを初期化するなら`initializer`の中で`ActiveSupport.on_load(:action_view)`みたいな感じでかく。
+`after_initialize`と`before_initialize`あったけど忘れた。
+
+テンプレートを登録するときは`ActionView::Template.register_template_handler(:ext, source_text_or_proc)`で出来る
+
+### 参考になりそう
+- [#379 Template Handlers (pro) - RailsCasts](http://railscasts.com/episodes/379-template-handlers)
+- [The Basics of Creating Rails Plugins — Ruby on Rails Guides](http://guides.rubyonrails.org/plugins.html)
+- [Rails Dispatch | Presented by Engine Yard](http://www.railsdispatch.com/)
+
+## やりたい
+- [分散テスト実行システムRRRSpecをリリースしました | クックパッド開発者ブログ](http://techlife.cookpad.com/2014/03/24/rrrspec/?utm_source=Cook_Wadai&utm_medium=twitter)
+- RailsCastをひたすらやる
+- [Ruby on Rails Hacking Guide // Speaker Deck](https://speakerdeck.com/a_matsuda/ruby-on-rails-hacking-guide)
+- [Cask](http://cask.github.io/)
+
+## 入れた
+[idobata.ioの非公式Macクライアント、Butterをリリースしました - BLOG.harukasan.jp](http://blog.harukasan.jp/entry/2014/03/24/233604)
+
+Chromeのデスクトップ通知で十分間に合ってるから使わないかもしれない
+
+
+## Atom使っている
+- Atomに変えてみている。
+- 長い間使っていると重くなる。
+- たまに間違えてキーをおしてChromeっぽいデバッグツールが開くことがある。
+- 範囲選択のキーバインドがEmacsじゃないから若干効率悪いけど普通に使えている
+- 変更があるファイルを緑で表示してくれて便利
+- SublimeTextよりも日本語の便利感
+- 今日はFindのキーバインド覚えた(prev/next出来るようになった)
+- PullRequestを出した→[Add recognition for .ruby template handler by hanachin · Pull Request #22 · atom/language-ruby](https://github.com/atom/language-ruby/pull/22)
