@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "たんたん"
+date:   2014-03-26 07:32:06
+categories: diary
+---
+# たんたん
+たんたんとこなしていきたい
+
+## 昨日atomに出したPullRequestマージされてた
+- [Add recognition for .ruby template handler by hanachin · Pull Request #22 · atom/language-ruby](https://github.com/atom/language-ruby/pull/22)
+
+thanksされるの気持ちいいな。
+
+## マージした
+- [fix typo by bash0C7 · Pull Request #48 · okinawarb/rubima](https://github.com/okinawarb/rubima/pull/48)
+
+名前typoしてた。`:bow:`土下座でthx書いた。
+
+## Jekyll
+### 残念なきもち
+Jekyllで、`chapter`みたいなの付けて、その`chapter`でソートして`for in`で回すみたいなのやりたかったけど断念。
+おっちゃんはすなおに手書きすることにするよ...
+
+### 本を書くためのフォーマット
+- [review/doc/format.rdoc at master · kmuto/review](https://github.com/kmuto/review/blob/master/doc/format.rdoc)
+
+Markdownにたりなさそうなのは
+
+- コラム
+- 用語リスト
+- ソースコードなどのリスト
+- ソースコード専用の引用
+- 行番号付き連番ありリスト
+- 行番号付き連番なしリスト
+- コマンドラインのキャプチャ
+- 番号がふられた図
+- グラフ表現ツールを使った図
+- リード文
+- 豊富なインライン命令
+
+あたりか
