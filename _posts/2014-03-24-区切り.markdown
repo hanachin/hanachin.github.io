@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "区切り"
+date:   2014-03-24 11:04:02
+categories: diary
+---
+# 区切り
+大事。
+
+## 雑な反省
+- 全体的に覚えることは多かったので勉強にはなった
+  - Railsアプリのテストの書き方
+  - JSのユニットテストの書き方
+  - (そもそも)Railsの書き方
+  - テストのコスト感
+    - 高いものは高いしそこにリソース割きすぎた感
+  - CSSの変更に強いテストの書き方
+  - 自前でCIすることのめんどくささと費用対効果感
+  - ChefとかDockerちょっとやってみる程度
+- お金がないままお金をうまないものに投資するとたいへん
+- 生真面目に週5で働きつつ週末休むと他のプロダクトにさく時間がない
+
+それなりに時間を書けた分のリターンはあったけど、すごく効率よく絞れたかというと正直微妙な感じではある。
+
+## Component-based Architecture
+[MountainWest RubyConf 2013 Component-based Architectures in Ruby and Rails by Stephan Hagemann - YouTube](http://www.youtube.com/watch?v=-54SDanDC00#t=93)
+このビデオをおすすめされて見た。MarkdownPreview、YouTubeのEmbedがPreview出来ないのちょっと残念だな。
+
+### gemは常にnamespaceの中に閉じ込められているけどRailsは...
+ゴッチャ
+
+### 8通りの設計を紹介している
+1. one app
+2. modules
+3. gems
+4. engines
+5. looser coupling
+6. services
+7. eco-system
+8. HTTP SOA
+
+Rails、だと普通は1か。ゴミ捨て場状態。全部突っ込まれてる。2でリサイクル可能な状態。
+3は、あまり使っているプロジェクト見たことない。
+僕は`discourse`あたりではじめて見たかも。
+1つのアプリのためだけのgemを作っていいんだ、という感動があった。
+
+EngineはDeviseとか、gemになってるの使ってることはあっても自分で作ることあまりない感ある。
+Rails + GrapeでAPI作ってmountみたいなのはよくありそうだけど。
+
+1〜8までやってみた結果、8のやつをまた1から〜って感じらしい。
+
+### 全然関係ないけどgit clean便利だ
+ビデオ中で使ってるけどめちゃ便利ですね
+
+- [transitive.info - git clean 使い方](http://transitive.info/article/git/command/clean/)
+
+### テスト
+テストする対象絞れるのは良さそうだけど、分割して実行するの若干めんどくささがありそう。
+
+### 雑感
+見る場所が減る、見るべきポイントがはっきり分かるので、よさそうだった。
+serviceのところでmethods数出してるのとか、すごくわかりやすい。
+
+業務でどうこれを実践していこうか考えてる...
+
+### リンク
+- [MountainWest RubyConf 2013 Component-based Architectures in Ruby and Rails by Stephan Hagemann - YouTube](http://www.youtube.com/watch?v=-54SDanDC00#t=93)
+- [shageman/the_next_big_thing](https://github.com/shageman/the_next_big_thing)
+- [discourse/discourse](https://github.com/discourse/discourse)
+
+## Rebuild.fm聞いた
+趣味の範囲が被ってなくてあんまりそそられなかったかもしれない。
