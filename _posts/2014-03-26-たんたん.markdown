@@ -58,3 +58,33 @@ Markdownにたりなさそうなのは
 > 自分の無実を証明するためには、自分が「無能」であることを主張しなきゃいけない。
 
 読んでるだけでも想像してしまってだいぶつらかった。無能アピールしたあと同じ職種に復帰するの、自分だと心折れそうで無理。
+
+
+[7. RRRSpecについて補足 - 進捗メモ](http://draftcode.osak.jp/articles/7.html)
+
+いい話だった
+
+## 書いたコードすべての行に意味がある
+`@`つけるのだるくて`attr_accessor`使ったんだけど`writer`使わないしそもそもそのインスタンス変数外部に公開するべきではない、みたいなことありませんか。
+
+今日やりました。1行1行すべてのコードに意味があるんですよね、アクセッサ必要ない場合は書くな!!!! (自戒)
+
+## 今日
+朝はやくから活動したせいか不機嫌。
+仕事はそれなりにコード書いたしコメントも書いた。
+趣味のコードを書いてない気がする。
+
+今から運動してシャワー浴びて寝ようと思う。
+ブログかくよりブログツール書いたり試すのが楽しいのと同じ現象が起きそうでMiddleman試したくなっている。
+
+## RailsのTemplate
+Controllerから`render`がよばれたときどうなっているか
+
+1. `ActionView::Renderer#render`がよばれる→[Main render entry point shared by AV and AC.](https://github.com/rails/rails/blob/4-0-stable/actionpack/lib/action_view/renderer/renderer.rb#L18)
+2. `patial`は考えない。`Renderer::render_template`がよばれ、`TemplateRenderer`に`lookup_context`が渡され、`render`が呼ばれる[ここ](https://github.com/rails/rails/blob/4-0-stable/actionpack/lib/action_view/renderer/renderer.rb#L42)
+3. `TemplateRenderer`は引数の`lookup_context`の`LookupContext#find_template`をよびだしテンプレートさがしてくる。1つ上の抽象クラスが[lookup_contextにdelegateしてる](https://github.com/rails/rails/blob/4-0-stable/actionpack/lib/action_view/renderer/abstract_renderer.rb#L18)
+4. `lookup_context`は、`view_paths`からテンプレートをさがしてくる。`view_paths`はたぶん、`app/views/`とかそこらへん。クラスは`ActionView::PathSet`。[LookupContextこれ](https://github.com/rails/rails/blob/4-0-stable/actionpack/lib/action_view/lookup_context.rb)
+5. `view_paths`は、[resolverをつかってテンプレートを探してくる](https://github.com/rails/rails/blob/4-0-stable/actionpack/lib/action_view/path_set.rb#L53)
+6. `Resolver`では`find_all`、`find_templates`ときて最終的に[ここらへん](https://github.com/rails/rails/blob/4-0-stable/actionpack/lib/action_view/template/resolver.rb#L175-L217)で`Dir#[]`をつかってみつけたファイルを`Template`クラスにして返す感じ
+
+`render`はどこでよばれるかとRuby on Rails hacking guideのcontrollerのところのそれをとおって、明示的にかいてなかったら[ここらへんで暗黙的によばれる](https://github.com/rails/rails/blob/4-0-stable/actionpack/lib/action_controller/metal/implicit_render.rb)っぽい
