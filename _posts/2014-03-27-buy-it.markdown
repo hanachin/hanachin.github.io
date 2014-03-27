@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "ソフトウェアを使用する権利を買うということ"
+date:   2014-03-27 10:16:49
+categories: diary
+---
+
+# ソフトウェアを使用する権利を買うということ
+それがOSSソフトウェアなら嬉しいけど、OSSじゃなくても素晴らしいソフトウェアには少しぐらい払えばいいんじゃないのかと思う。
+
+## CIがbower installでこける
+`bower install`の不安定さは一体なんなのか。
+rails-assets使ったほうがいいのかな。
+
+## 読んだ記事
+### Ruby
+[Ruby FFIを使ったエクステンションの作り方 - Boost Your Programming!](http://kazegusuri.hateblo.jp/entry/2014/03/02/192729)
+
+楽しそう。Rubyの外に出れていないので使う機会が多分ない。
+
+### ネタ
+- [暇だからイケダハヤト氏にブログのダメ出しをされてきた - 暇な女子大生が馬鹿なことをやってみるブログ](http://joshi-daisei.hatenablog.com/entry/2014/03/26/184559)
+- [ARuFaの日記](http://d.hatena.ne.jp/Arufa/)
+
+
+## 後でポチる
+microUSB+これ持っておけばよさげ
+
+[AmazonベーシックのLightningケーブル/microUSBアダプタがApple認証つきなのに純正より安くてお得！](http://ushigyu.net/2014/03/27/amazon-basics-lightning/)
+
+買った。
+
+## idobata会議
+Ustほんとたすかった。
+面白かった。
+もうちょい連携強化していかないとな。
+OSSにして欲しい。
