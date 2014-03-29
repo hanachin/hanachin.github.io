@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "まごまご"
+date:   2014-03-28 13:26:10
+categories: diary
+---
+# まごまご
+
+## Butterバッジ...
+
+Emberからデータを取るのではなく、既にrenderされた未読バッジから取ればよさそうでした。
+
+``` javascript
+_.reduce($('.unread-count'), function (s, e) { return s + +$(e).text(); }, 0)
+```
+
+[こうやれば通知表示出来るっぽい](http://stackoverflow.com/questions/392797/how-do-i-draw-a-badge-on-my-dock-icon-using-cocoa)
+
+[このファイル](https://github.com/harukasan/butter/blob/master/app/main_controller.rb)いじれば開発できそう。
+RubyMotionと、Macの開発者の権利欲しい。
+
+## Ruby on Rails Tutorial Ja
+3/31に切り替えにむけてやらねばならない...
+
+## Tosakin
+
+Idobata通知のアダプタ
