@@ -35,7 +35,7 @@ class Post
 layout: post
 title:  <%= title.inspect %>
 date:   <%= date %>
-categories: <%= categories.join(',') =>
+categories: <%= categories.join(',') %>
 ---
 TEMPLATE
   end
