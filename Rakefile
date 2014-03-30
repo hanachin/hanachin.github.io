@@ -11,7 +11,7 @@ task :diary do
   time   = Time.now
   date   = time.strftime('%Y-%m-%d %H:%M:%S')
   fname  = "_posts/#{time.strftime('%Y-%m-%d')}-#{ftitle}.markdown"
-  File.write(fname, ERB.new(<<TEMPLATE).result(binding)) and `open -a Atom #{Shellwords.escape fname}`
+  File.write(fname, ERB.new(<<TEMPLATE).result(binding)) and `emacs #{Shellwords.escape fname}`
 ---
 layout: post
 title:  <%= title.inspect %>
