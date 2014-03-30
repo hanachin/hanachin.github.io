@@ -47,3 +47,10 @@ task :diary do
   post = Post.new STDIN.gets.chomp, categories: %w(diary)
   File.write(post.filename, post.to_s) and `emacs #{Shellwords.escape post.filename}`
 end
+
+desc "記事を書こう"
+task :post do
+  puts "タイトルどうする?"
+  post = Post.new STDIN.gets.chomp, categories: %w(post)
+  File.write(post.filename, post.to_s) and `emacs #{Shellwords.escape post.filename}`
+end
