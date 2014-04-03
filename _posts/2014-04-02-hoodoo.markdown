@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "四月は君の嘘"
+date:   2014-04-02
+categories: diary
+---
+
+四月は君の嘘、読んだことない。
+
+通常のご飯のカロリーに驚愕しているので多少高くてもマンナンライス買おうと思ってる。
+
+## エイプリルフールネタ
+[4K・8Kを凌駕する超次世代型テレビを筑波大学が開発！](http://www.kansei.tsukuba.ac.jp/~uchiyamalab/aprilfool/)
+
+すごくよかった。
+GIGAZINEをチェックすると仕事できないので今年はチェックしなかった。
+
+## 上京
+4/9に上京する。仕事でちょびっとだけ、すぐ帰る。桜見たさに負ける。
+
+## 欲しいHubotプラグイン
+- [進捗どうですか](http://shinchokudodesuka.tumblr.com/page/4)から画像貼る
+
+## MozillaのCEOの話
+- [Inclusiveness at Mozilla | Brendan Eich](https://brendaneich.com/2014/03/inclusiveness-at-mozilla/)
+- [Mozilla Supports LGBT Equality | The Mozilla Blog](https://blog.mozilla.org/blog/2014/03/29/mozilla-supports-lgbt-equality/)
+- [Exclusive: Mozilla CEO Eich says gay-marriage firestorm could hurt Firefox (Q&A) - CNET](http://www.cnet.com/news/mozilla-ceo-gay-marriage-firestorm-could-hurt-firefox-cause-q-a/)
+- [Mozillaの新CEO、同性婚に反対する活動を支援していたとして辞任を求められる | スラッシュドット・ジャパン IT](http://it.slashdot.jp/story/14/04/01/0529209/Mozilla%E3%81%AE%E6%96%B0CEO%E3%80%81%E5%90%8C%E6%80%A7%E5%A9%9A%E3%81%AB%E5%8F%8D%E5%AF%BE%E3%81%99%E3%82%8B%E6%B4%BB%E5%8B%95%E3%82%92%E6%94%AF%E6%8F%B4%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A8%E3%81%97%E3%81%A6%E8%BE%9E%E4%BB%BB%E3%82%92%E6%B1%82%E3%82%81%E3%82%89%E3%82%8C%E3%82%8B)
+
+仕事とプライベートは分けて考えろというのはわかるけどLGBT Equalityを標榜してるのにトップが同性婚反対なのは批判でてしょうがない気がした。
