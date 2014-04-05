@@ -8,7 +8,9 @@ categories: diary
 さくら、来週末まで咲いてるかな。彼女に見せてあげたい。
 
 ## 送ったPullRequest
-[Add fenced code blocks spec by hanachin · Pull Request #5 · melborne/togglate](https://github.com/melborne/togglate/pull/5)
+- [Fix typo in Rise of R article by hanachin · Pull Request #3 · EzoeRyou/blog](https://github.com/EzoeRyou/blog/pull/3)
+- [Add fenced code blocks spec by hanachin · Pull Request #5 · melborne/togglate](https://github.com/melborne/togglate/pull/5)
+- [Move js to resources dir by hanachin · Pull Request #14 · harukasan/butter](https://github.com/harukasan/butter/pull/14)
 
 ## Tosakin
 Coveralls, TravisCI, Codeclimate, Gemnasiumの設定をした。
@@ -17,10 +19,19 @@ GemnasiumのHookは金払わないと受け取らないっぽい。ちょっと�
 
 TravisCIの通知受け取る奴はTosakinでも実装して、Idobata本体から抜いてもいい感じにしてあげたい。
 
+### CircleCI
+うーん
+
+[RequestBin - 1l7qcgx1](http://requestb.in/1l7qcgx1?inspect)
+
 ### TravisCI
 [Travis CI: Configuring Build Notifications](http://docs.travis-ci.com/user/notifications/)
 
 ここにのってる。
+
+[RequestBin - waeyuawa](http://requestb.in/waeyuawa?inspect)
+
+とってみた
 
 ### Coveralls
 [こういう感じ](http://requestb.in/1ka5hy61?inspect)
@@ -58,3 +69,5 @@ unsupportedなのが気になるね。
 ## こういうやつ
 休日に趣味で実験でもしてないとおいてかれて死ぬ感ある。
 まぁサービスもすぐ死ぬだろうけど...
+
+それにしても思ったより時間かかったり実装が迷走したり自分のプログラミング能力の低さを感じる。
