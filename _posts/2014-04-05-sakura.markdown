@@ -1,0 +1,60 @@
+---
+layout: post
+title:  "sakura"
+date:   2014-04-05
+categories: diary
+---
+
+さくら、来週末まで咲いてるかな。彼女に見せてあげたい。
+
+## 送ったPullRequest
+[Add fenced code blocks spec by hanachin · Pull Request #5 · melborne/togglate](https://github.com/melborne/togglate/pull/5)
+
+## Tosakin
+Coveralls, TravisCI, Codeclimate, Gemnasiumの設定をした。
+GemnasiumのHookは金払わないと受け取らないっぽい。ちょっとケチい。
+後でためそう。
+
+TravisCIの通知受け取る奴はTosakinでも実装して、Idobata本体から抜いてもいい感じにしてあげたい。
+
+### TravisCI
+[Travis CI: Configuring Build Notifications](http://docs.travis-ci.com/user/notifications/)
+
+ここにのってる。
+
+### Coveralls
+[こういう感じ](http://requestb.in/1ka5hy61?inspect)
+
+[HipChatへの通知](https://coveralls.io/docs/notifications)がのってるのでこれににせたいな。
+
+### Jenkins
+無料で使えるところないのかな。
+とりあえず後で自分で設定してみるか。
+
+[jenkins-idobata-plugin](https://github.com/tototoshi/jenkins-idobata-plugin)
+
+とか参考になりそうだけど、わからん。
+
+### drone.io
+[drone.io](https://drone.io/)は、Ruby 2.0.0しか対応してない。対応しない。
+
+## 設定してみてハマりどころ
+- coveralls、repo_token書かないと動かないんか
+- coveralls、simplecovみたく一番上やないと動かないんか
+- coveralls、最低1つはテストがないとダメなんか...
+
+## RequestBin
+[RequestBin — Collect, inspect and debug HTTP requests and webhooks](http://requestb.in/)
+
+くっそ便利。webhookのレスポンス見るためにいちいち色々やらなくていい。
+
+## Engineのテスト
+- [engine routes - Routing specs - RSpec Rails - RSpec - Relish](https://www.relishapp.com/rspec/rspec-rails/v/3-0/docs/routing-specs/engine-routes)
+
+親のほうからもテスト出来る?
+unsupportedなのが気になるね。
+子エンジンをいっぱい持つRailsアプリはどうやってテストするといいんだろう。
+
+## こういうやつ
+休日に趣味で実験でもしてないとおいてかれて死ぬ感ある。
+まぁサービスもすぐ死ぬだろうけど...
