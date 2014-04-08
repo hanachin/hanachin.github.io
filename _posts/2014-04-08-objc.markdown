@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "objc"
+date:   2014-04-08
+categories: diary
+---
+
+[Rebuild: #39](http://rebuild.fm/39/)を聞いた。
+
+- [NSScreencast: Bite-sized Screencasts for iOS Development](http://nsscreencast.com/)
+- [Android - objc.io issue #11](http://www.objc.io/)
+
+読みたい
+
+## RailsTutorial
+周りみんなやってる。やるか〜
+前に何度か挫折したんだよね。
+
+## 職人たちに出てくるのがみんな男
+[マイクロアドを創る職人たち](http://engineer.microad.jp/)
+
+圧倒的男性比率。
+女性エンジニアの方は「マドンナエンジニア」と呼ばれストロベリ日記なるものを業務で書かされることになるのか。
+
+- 職人たちのセレクトを全員男にする
+- 男性エンジニアを「職人」と呼ぶ一方、女性エンジニアは「マドンナエンジニア」と呼ぶ
+- 男性エンジニアは、「日記」を任されないの?
+
+## 話題
+[経済産業省に引導を渡された私，やっと，経済的な死亡宣告が出ました． - もなもなもなかのページ](http://www.monaka.org/blog/2014/04/07/i-am-finally-restart-from-bung/)
+
+会社はしんでもソフトウェアは生きる。
+
+## API
+APIのテストについて、実際のユースケースに沿ってシナリオを書いてみると、使いやすいAPIのレスポンスについて一考させられる。
+1つの目的を達成するまでに、複数回のAPIコールが必要な場合、複数回のAPIコール中で、直前のリクエストのレスポンス以外を覚えておかないといけない状況が出てきたなら、それは、糞だ。
+
+## GoBuild
+[GoBuild - Cross-Platform Go Project Compiler](http://gobuild.io/)
+
+なにこれ、すっげぇ。
+
+## 日本語
+むずいよね
+
+## 東京
+うっ、今日になって帰りの便とった。
+泊まるところ、適当にカプセルホテル予約するつもり。
+歓送迎会どこだっけ...
