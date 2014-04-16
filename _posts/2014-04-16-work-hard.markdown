@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "work-hard"
+title:  "ちょっとだけがんばろ"
 date:   2014-04-16
 categories: diary
 ---
