@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "work-hard"
+date:   2014-04-16
+categories: diary
+---
+
+## よさそうな資料
+- [BDD勉強会 第6回](http://www.slideshare.net/zakihaya/bdd-6)
+- [Travis CI: Caching Dependencies and Directories](http://docs.travis-ci.com/user/caching/)
+  - bundlerキャッシュしたほうが速度はやそう
+
+## キニナルモン
+- [esminc/narrative](https://github.com/esminc/narrative)
+- [女子大生とペアプロするだけの簡単なお仕事です！｜paizaオンラインハッカソンVol.2](https://paiza.jp/poh/paizen)
+- [hrysd/exception_notification-idobata](https://github.com/hrysd/exception_notification-idobata)
+  - 例外上がるとIdobataにどん
+- [jayzes/cucumber-api-steps](https://github.com/jayzes/cucumber-api-steps)
+  - Tableじゃなくて文字列のリテラルかけるの忘れがち
+- [ongaeshi/honyomi](https://github.com/ongaeshi/honyomi)
+- [ProxyLocal](http://proxylocal.com/)
+  - rack appを外から見れるようにproxyしてくれるサービスっぽい
+
+## 便利情報
+- [vowel2emoticon.rb](https://gist.github.com/iori-o/10358124)
+
+おくちのかたち
+
+## よんだもの
+### ECMA-262
+休憩中、ECMA-262をよんだ。
+次のようなコードがあるときの動作について調べた。
+11.2.1 Property Accessを読むといいです。
+
+
+``` javascript
+var o = {};
+var prop1 = { x: 1 };
+var prop2 = { y: 2 };
+o[prop1] = 'prop1';
+console.log(o[prop2]);
+// => prop1
+```
+
+### HRT
+[小野和俊のブログ:HRTの原則 ～ソフトウェア開発はバーでしっとり語り合うように ～](http://blog.livedoor.jp/lalha/archives/50496623.html)
+
+がんばりたい...
+
+### WriteCodeEveryDay
+[John Resig - Write Code Every Day](http://ejohn.org/blog/write-code-every-day/)
+
+## 出したPull Request
+[Close a tag :D by hanachin · Pull Request #7 · EzoeRyou/blog](https://github.com/EzoeRyou/blog/pull/7)
+
+## 動作するようになったhiki
+Herokuで[とりあえず動くようになった](http://okinawarb-hiki.herokuapp.com/)。
+
+ファイル添付など試していきたい。
+
+## Dropboxの容量
+若干たりなくてぐぬぬってる。どうでもいいものはCopyに移して少しあけるか...

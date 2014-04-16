@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "帰宅"
+date:   2014-04-14
+categories: diary
+---
+沖縄帰ってきた。ポーク食べた。
+
+## 作りたい
+[ミッドナイトリゾット湾岸（株式総会）について - 快適な生活](http://kaiteki.hateblo.jp/entry/2014/04/14/013224)
+
+## 便利情報
+[風呂に入るときにあると便利なもの - hnnhnのインターネットエクスプローラーブログ](http://hnnhn.hatenablog.jp/entry/2014/04/14/062743)
+
+## 仕事
+結構どうしようもない確認が遅くなって関係各位に影響が。申し訳ない。
+
+## データベースのカラムやテーブル名に男っぽい名詞を付けていいのか問題
+idobata、多分`Guy < AR::Base`で`User < Guy`、`Bots < Guy`なんだけど、`guys`だとまぁ、女の子たちにも使うけどguyだと使わない気がする。
+テーブル名とか気にするなという話ではあるけど。
+
+個人的には`User < Member`とか`Bot < Idobatan`とか`Human < User`かつ`Bots < User`とかのがすっきりする気がする。
+あるいは`User < AR:Base`で`Bots < User`で`type`の`default: 'User'`かな。(できるのかしらんが)
+難しいよね。
+
+とりあえず、ジェンダー的に問題ないか調べたいときは`gender neutral`でググルトいいことを知った。
+
+- [Is "guy" gender-neutral? - English Language & Usage Stack Exchange](http://english.stackexchange.com/questions/11816/is-guy-gender-neutral)
+- [word choice - What is a feminine version of 'guys'? - English Language & Usage Stack Exchange](http://english.stackexchange.com/questions/19074/what-is-a-feminine-version-of-guys)
+- [In plural, guys is not completely gender-neutral but it may refer to people of either sex in some circumstances and forms; the greeting "Hey guys" can generally refer to people of either gender.](http://en.wiktionary.org/wiki/guy)
+
+などなど。やはり`Guy`は完全にgender neoutralというわけではないようだ。
+
+このような議論がPull Requestベースの開発でなされたかどうかはさておき、クローズドソースなので確認のしようがない。
+せめて聞けるユーザーグループ部屋欲しい。
+
+## 江添さんのブログ
+C++ WGの論文のレビューが終わると雑いブログ増えて大変うれしい。
+
+## Hiki
+Herokuで動かす情報、2年前の情報が最新のような気がする。
+とりあえず動かすところまで頑張りたくて[okinawarb/hiki](https://github.com/okinawarb/hiki)の`run-on-heroku`ブランチで頑張っている。
+こういうオープンソース活動に継続してコミット出来るhsbtさんすごい...と勝手に尊敬している。
+
+とりあえず、明日あたりtable作るmigration書こうと思って、1日を終了した。
