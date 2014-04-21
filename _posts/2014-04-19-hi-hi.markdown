@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "すごい広島"
+date:   2014-04-19
+categories: diary
+---
+
+[デバッグ用のWebサーバーが欲しい by hanachin · Pull Request #23 · codeforkanazawa-org/5374](https://github.com/codeforkanazawa-org/5374/pull/23)
+
+このPull Requestでコメントいただいた[eiel](http://eiel.info/)さんがやってる[すごい広島](http://great-h.github.io/)の、参加したらやることのissue立てたり、Pull Request出して貢献させるユニークな参加方式が、[OkinawaDevOps #3](https://github.com/OkinawaDevOps/DevOpsOkinawa-3)で採用されてて、スピード感すごかった。
+
+## Konjak
+進捗悪い
+
+### XMLをparseしたとき空行のtext nodeが交じらないようにする
+[ruby - Avoid creating non-significant white space text nodes when creating a `Nokogiri::XML` or `Nokogiri::HTML` object - Stack Overflow](http://stackoverflow.com/questions/21114933/avoid-creating-non-significant-white-space-text-nodes-when-creating-a-nokogiri)
+
+便利情報だった
+
+## its
+[rspec/rspec-its](https://github.com/rspec/rspec-its)
+
+外部gemにでた。`.rspec`あたりに`-rrspec/its`書くとよろしい。
+
+## ooedo
+楽しそうだった。
+
+### json話
+[スライドは多分これ](https://speakerdeck.com/shyouhei/deeper-look-at-rfc7159-the-json)
+
+JSONの仕様はECMA-404読む限りだと、`[]`、`{}`以外もOKによめたんだけど[rfc4627](http://www.ietf.org/rfc/rfc4627.txt)では
+
+> A JSON text is a serialized object or array.
+
+となってて残念な感じだった。
+紹介されてた[RFC 7159](http://tools.ietf.org/html/rfc7159)では
+
+>  o  Changed the definition of "JSON text" so that it can be any JSON
+>        value, removing the constraint that it be an object or array.
+
+となっていて安心。
