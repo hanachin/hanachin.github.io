@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "ホビット見に行く"
+date:   2014-04-23
+categories: diary
+---
+
+### [fukayatsu/lita-idobata](https://github.com/fukayatsu/lita-idobata)
+昨日同じ時間帯に同じようなの作ってる人がいてめっちゃ面白かった。
+
+### [ysbaddaden/prax](https://github.com/ysbaddaden/prax)
+Pure RubyのPow、便利そう。乗換えよ。
+
+### [議事録を書くときに意識すべきこと - TECH-moratorium ： テクモラトリアム](http://d.hatena.ne.jp/HappymanOkajima/20110225/1298608948)
+永和のひとだ.
+
+こういう人が身近にゴロゴロいるのよさそう。
+
+### つくったもの
+[hanachin/emnm](https://github.com/hanachin/emnm)
+
+### [ランサーズ、キャンセル多すぎ、単価安すぎだし、丸投げだしキツすぎ | kosuke.cc](http://kosuke.cc/column/impression-of-lancers/)
+怖い
