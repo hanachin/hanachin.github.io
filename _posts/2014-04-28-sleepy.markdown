@@ -1,0 +1,114 @@
+---
+layout: post
+title:  "sleepy today"
+date:   2014-04-28
+categories: diary
+---
+
+ねむみ
+
+## boot2dockerでMacのディレクトリを共有
+[Macのboot2dockerでフォルダを共有する - Qiita](http://qiita.com/wataru420/items/d6a4e979afc359ee1d2d)
+
+うーん、まだ出来ない感じなのかな。
+
+## GoogleComputeEngine
+とりあえずさくっと画面からつくる。Billingさえ入れれば後はOKな感じ。
+
+マシンタイプを選ぶ。microもあるのか。なかなか使えそう。
+とりあえず`brew install gcutil`すると、コマンドラインユーティリティが落ちてくる。
+画面で`gcutil`を叩くためのコマンドが出てくるので、それを叩いて、ブラウザでgcloudの認証をする。
+認証キーをコピペして貼ると、SSHキーが作られる。
+
+終わったら...＞ログイン状態＜
+
+簡単ですね。
+
+```
+sei@web:~$ uname -a
+Linux web 3.13-0.bpo.1-amd64 #1 SMP Debian 3.13.7-1~bpo70+1 (2014-03-29) x86_64 GNU/Linux
+sei@web:~$ cat /etc/os-release
+PRETTY_NAME="Debian GNU/Linux 7 (wheezy)"
+NAME="Debian GNU/Linux"
+VERSION_ID="7"
+VERSION="7 (wheezy)"
+ID=debian
+ANSI_COLOR="1;31"
+HOME_URL="http://www.debian.org/"
+SUPPORT_URL="http://www.debian.org/support/"
+BUG_REPORT_URL="http://bugs.debian.org/"
+sei@web:~$
+```
+
+rubyは入ってなかった。
+
+[Debian(wheezy)でdockerを動かす。 - .h2oのお気楽日記](http://d.hatena.ne.jp/dot_h2o2/20131202/p1)を参考にする
+
+```
+sudo sh -c "wget -qO- https://get.docker.io/gpg | apt-key add -"
+OK
+sei@web:~$ sudo sh -c "echo deb http://get.docker.io/ubuntu docker main\
+> > /etc/apt/sources.list.d/docker.list"
+sei@web:~$ sudo apt-get update
+sei@web:~$ sudo apt-get install lxc-docker
+```
+
+ふむ。
+
+Dockerのvolume周り不安定そう。touchすると落ちたりした。
+
+10分単位の課金なのいいなぁ。10分すぎると1分単位の課金だし。
+起動もちょっ速。
+
+## DockerでRuby
+
+適当に探してみたんだけどなかなかメンテ状況活発じゃないのある。
+みんなprivate repository運用みたいなのしてるのかな〜。気になる。
+
+探してみたら
+[Docker Meetup Tokyo #2 でLTしてきた + DigitalOceanとGCEでもDocker Applicationを動かしてみた | SOTA](http://deeeet.com/writing/2014/04/13/docker-meetup-2/)の記事経由で[rbdockというRuby/Rails/Sinatra用のDockerfileを生成するgemをつくった | SOTA](http://deeeet.com/writing/2014/03/06/rbdock/)を見つけた。
+
+
+便利そうだ。
+
+ONBUILDというの使うと、変更があったら追加して実行みたいなのが簡単に出来るっぽい。神...
+
+[Docker as a Serviceの比較(2014年4月版) - Qiita](http://qiita.com/nyarla/items/2015840bb6ed955d0250)
+
+[ngrok - secure introspectable tunnels to localhost](https://ngrok.com/)はproxy建ててlocalhostで公開してるやつを外から見れるようにしてくれるっぽい。これも便利そうだ。
+
+## Beanstalk
+便利そうだ...
+一発で色々やってくれるということだけ分かった。
+
+ためしに`rbdock`でなんか作ってみる。
+
+## 開発環境の使い捨て
+Dockerなどで開発環境を構築して、万が一、作業中のデータが消えるのは嫌な気がする。
+VOLUMEで共有するのも良さそうだけど、VOLUMEはなんか挙動が怪しい感じだった。
+
+
+## ryukyurb
+参加してデバッグ手伝ったりもくもくしている。
+
+hiki動かすのむずい。
+
+ngrokを使ってつくろうとしたらハマった。
+
+[Ubuntu 14.04 LTS(Trusty Tahr)に ruby-build で ruby 2.1.1 インストール失敗、そんなとき](http://yosiwo.lowtech.ne.jp/?p=1547)
+
+うーん、エンコーディングが怒られるな。
+
+boot2docker tcuser忘れる。
+
+会場はwEVAさんが提供してくれている。
+隣でデスマしてて大変そうだった。
+Okinawa.rbではビール飲んだり参加者の人が持ってきてくれたりするけど、そういう感じではない。
+
+ドットインストールの記事をプロジェクターでうつしながらモクモクしてる感じ。
+机はまぁなんでもいいと思うんだけど、寝転がれる環境というか、それなりに長い時間はなしたり、もくもくするためには、いい椅子が必要だなぁ、と思ったのでした。
+
+## 読んだ記事
+[開発を短い時間で集中して毎日やる | うめブログ](http://umenon.com/2014/04/28/short_hours_work/)
+
+1日4時間なら長い間続けられそうというのは確かにある。
