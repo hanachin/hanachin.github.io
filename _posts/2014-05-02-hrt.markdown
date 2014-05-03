@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "HRTむずいよね"
+date:   2014-05-02
+categories: diary
+---
+
+ついやってしまう。
+
+## 読む
+- [新規事業で直面した38の絶望 | 速達サービス Pacirii](https://pacirii.com/posts/2)
+- [今月号のロッキンオンの表紙を見て、割と絶望した話 - ロックンロールと野球とラーメン](http://xkxaxkx.hatenablog.com/entry/2014/05/01/164026)
+- [色んなガジェットを組み合わせた部屋を作ってみたので色々と考察してみた - 凹みTips](http://tips.hecomi.com/entry/2014/05/01/130105)
+
+## 便利そう
+[interagent/heroics](https://github.com/interagent/heroics)
+
+## 嬉しかったこと
+[EditorConfig](http://editorconfig.org/)紹介したらなかなか反響よかった。
+たまにGitHubで設定されてるの見るんだけど、なかなかRuby界隈では広まってない感ある。
+GitHubで`.editorconfig`が含まれるリポジトリ数比較するといいのかも。
