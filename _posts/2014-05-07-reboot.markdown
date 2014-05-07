@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "4連休あけ再始動"
+date:   2014-05-07
+categories: diary
+---
+
+ゴールデンウィーク、彼女と一緒に朝までマイクラしたから体調崩れたかとおもいきや、今朝いっしょに目覚めたので、睡眠リズム戻ってお得感ある。
+
+## 某社
+研修で作るリポジトリの名前が同じだと[こんな感じ](https://github.com/search?q=chumon)で今年の新卒社員っぽい人あぶり出せて便利。
+
+## Rails
+[Gem for work with BEM methodology in Rails applications](https://github.com/verybigman/bem-on-rails)みてた。BEM使ってかくのに良さそう。試したい。
+
+## Pow + Foreman
+どうやればいいんや...
+
+- [Foreman as process manager, Pow as DNS server and HTTP proxy](http://robots.thoughtbot.com/foreman-as-process-manager-pow-as-dns-server-and-http)
+  - `foreman`は普通に起動
+- [Ruby - Pow + Foreman = Invoker - Qiita](http://qiita.com/tyabe/items/18067c5c428b7a2fc501)
+  - 代替ツール
+
+## シンボルフォント
+[cognitom/symbol-font-in-web](https://github.com/cognitom/symbol-font-in-web)
+
+## コンテキスト
+今日はコメントで一言「:pray:」だけ書いたらいつの間にかぼくのコメントごとissueが消されたので、これからは絵文字だけじゃなくて日本語ちゃんと書くようにしようと思った。
+相手のことを考えてコメントしないといけない。
+
+## ステッカー
+ゆーいちさんに送った。
+
+## 知らない人の結婚式
+[お金だした](https://readyfor.jp/projects/pinkdotok)。
+
+## CodeClimate
+僕が書いたソースで、BとCになっているものがあった。正したい。
