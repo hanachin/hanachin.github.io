@@ -11,6 +11,8 @@ categories: diary
 ## 便利gem
 - [cldwalker/hirb](https://github.com/cldwalker/hirb)
 - [twe4ked/rspec-nc](https://github.com/twe4ked/rspec-nc)
+- [Contracts.ruby by egonSchiele](http://egonschiele.github.io/contracts.ruby/)
+- [youpy/netprint](https://github.com/youpy/netprint)
 
 ## Thanks
 [Add tegaki-jan to rails-assets · Issue #2 · mtsmfm/tegaki-jan](https://github.com/mtsmfm/tegaki-jan/issues/2)がcloseされた。
@@ -22,6 +24,7 @@ view内で現在のページを確認するような`if`を何度も書いたと
 例が酷いが、例えば次のようなレイアウトがあったとき、
 
 __app/views/layouts/application.html.erb__
+
 ``` erb
 <% if current_page?(honyararas_path) || current_page?(new_honyarara_path) %>
   かき氷が安い
@@ -31,16 +34,19 @@ __app/views/layouts/application.html.erb__
 これを`content_for`を使ってまとめると
 
 __app/views/layouts/application.html.erb__
+
 ``` erb
 <%= content_for :banners %>
 ```
 
 __app/views/banners/_summer_bargen.html.erb__
+
 ``` erb
 かき氷が安い
 ```
 
 __app/views/honyararas/index.html.erb__
+
 ``` erb
 <% content_for :banners do %>
   <%= render 'banners/summer_bargen' %>
@@ -48,6 +54,7 @@ __app/views/honyararas/index.html.erb__
 ```
 
 __app/views/honyararas/new.html.erb__
+
 ``` erb
 <% content_for :banners do %>
   <%= render 'banners/summer_bargen' %>
@@ -57,3 +64,112 @@ __app/views/honyararas/new.html.erb__
 このようにすっきりする。
 
 実際に`render`される場所と、内容を設定する場所が離れてしまうのがちょっと残念なきもちある。
+
+## faced markdown
+うまく設定できてないっぽくて表示くずれてる。後で設定方法調べるぞ。後でが多いな。
+
+## po4a
+昨日ちょっと試したんだけど、対応してないフォーマットだと微妙そうだった。
+Ubuntuとかだとaptで入って大変便利なんだけど、Macで普通に動かすためにはどうすればいいのか調べてみよう。
+試しにJSON-Schemaの文書とか翻訳してみようと思う。
+
+## TDD
+ずっと燃えてて面白い。
+
+- [TDDという名の幻想... - Qiita](http://qiita.com/asip2k25/items/a580417c8aeedd248094)
+- [TDDをめぐる、最近の議論についての私見。 - ふぃーるどのーつ](http://blog.fieldnotes.jp/entry/2014/05/07/225129)
+
+## Vim
+[Why I use Vim · Pascal Precht](http://pascalprecht.github.io/2014/03/18/why-i-use-vim/)
+
+## minecraft
+あとでいじりたい
+
+[tompng/minecraft-ruby](https://github.com/tompng/minecraft-ruby)
+
+## いきなり消すのはいいが理由を教えて欲しい
+[#5 に @hanachin が書いたコメント「:pray:」が消された理由が知りたい · Issue #10 · okinawarb/meetups](https://github.com/okinawarb/meetups/issues/10)
+
+## 電柱に貼ってある不快な張り紙を剥がしたいときはどうするのがいいのか
+x年x月x日地震が起こる、みたいなやつ。
+すっごい剥がしたいけど、電柱は電力会社のもちものなので、それにはられたものを勝手に剥がすのは、勝手にはるのと同じぐらいよくない行為だと思うのと、そういう言説をする自由があるのはいいことだと思っている。
+
+## 所感
+めんどくさい言説しかしておらずコード書いてない。
+
+## 出したPull Request
+業務のやつは粛々と、少しずつ進めてる。
+
+- [Okinawa.rb Meetup! #117の @hanachin の参加記録書いた Fix #2 by hanachin · Pull Request #12 · okinawarb/meetups](https://github.com/okinawarb/meetups/pull/12)
+- [meetupsに記事を書くための、ガイドを書く by hanachin · Pull Request #9 · okinawarb/meetups](https://github.com/okinawarb/meetups/pull/9)
+
+## 便利そう
+[Paw – The missing HTTP & REST API Tester for Mac](http://luckymarmot.com/paw)
+
+コード生成ついてる!! これあれば、ライブラリとかさくっと作れるのでは!?
+とりえあず10日間体験版落とした。
+
+## Sphinx入れる
+試したいので`brew install`した。
+
+[Mac - Boxen使ってて許されるのは2013年だけだった - Qiita](http://qiita.com/yuku_t/items/50b2b376604c2fefd8cd)読んでてアレだったけど、Boxenでちゃんと環境整えてなくカジュアルに`brew install`してしまうことが最近多い。
+
+と思ったらsphinx別ものだった。僕が入れたいsphinxと違う奴だ...
+
+### まずpythonの環境を入れる
+- `brew install pyenv`
+- `brew install pyenv-virtualenv`
+
+zshrcに`pyenv`の設定書く。
+
+`if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi`
+
+`brew info pyenv`とかすると、インストール後やることとか表示されたりするので、見逃したときも安心。
+
+[Mac OS X, Linuxへのインストール — Python製ドキュメンテーションビルダー、Sphinxの日本ユーザ会](http://sphinx-users.jp/gettingstarted/install_unix.html)などを見ると2.7系がよさそう。
+
+`pyenv -l`で確認、2.7.6でいいのかな。`pyenv install 2.7.6`を実行。
+`pyenv local 2.7.6`してから`python --version`で確認する。
+
+### virtualenvを整える
+Python入ったの確認できたら次はpyenvをつくって、確認
+
+- `pyenv virtualenv venv276-sphinx`
+- `pyenv activate venv276-sphinx`
+- `pyenv virtualenvs`
+
+毎回activateする必要があるかも。気をつけよう。
+
+### ようやく、sphinxいれる
+`easy_install`最初からあった。一応`which easy_install`でvirtualenvのものが使われることを確認した。
+終わったら`easy_install sphinx`でさくっと入る。
+
+`sphinx-quickstart`を入力して、なんか出るのを見て確認。
+
+## [国際化 — Sphinx 1.2.2 ドキュメント](http://docs.sphinx-users.jp/intl.html
+なぜSphinx入れたかというと、国際化がやりたいからだ。
+対象となるプロジェクトがsphinxを使っているので環境を整えた。
+
+[spacetelescope/understanding-json-schema](https://github.com/spacetelescope/understanding-json-schema)を見る。
+最近は`.travis.yml`見れば依存関係ひと目でわかっていい。
+`Makefile`あるから依存入れて`make gettext`すればとりあえず出来そう。
+`pip`でsphinx/sphinx_build/jsonschema入れた。
+国際化のドキュメントみると`sphinx-intl`いれるとよさそうなので、それもいれた。
+
+`Makefile`はSphinxが作ってくれるっぽい。
+クソ便利だ...最初から国際化しやすいようなお膳立てが整っている。
+
+ドキュメント読みながらすすめる。
+
+```
+% cat conf.py
+locale_dirs = ['locale/']   # path is example but recommended.
+gettext_compact = False     # optional.
+
+% sphinx-intl update -p build/locale -l ja
+```
+
+とりあえず今日はここまでかな...
+
+`locale/ja/LC_MESSAGES`以下の`po`ファイルを編集すればよいっぽい。
+編集するサービスで[Transifex - Continuous Localization Platform](https://www.transifex.com/)というのがあるらしいので、それも試したい。
