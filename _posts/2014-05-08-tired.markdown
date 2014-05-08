@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "疲れた"
+date:   2014-05-08
+categories: diary
+---
+
+口だけ出して手を動かさないのは嫌だけど、手を動かすと、疲れる。
+今週末もしっかり休もう。
+
+## 便利gem
+- [cldwalker/hirb](https://github.com/cldwalker/hirb)
+- [twe4ked/rspec-nc](https://github.com/twe4ked/rspec-nc)
+
+## Thanks
+[Add tegaki-jan to rails-assets · Issue #2 · mtsmfm/tegaki-jan](https://github.com/mtsmfm/tegaki-jan/issues/2)がcloseされた。
+こんどは`tegaki_jan_rails`の方にpull request投げたい。
+erb使う必要は、ない。
+
+## content_for
+view内で現在のページを確認するような`if`を何度も書いたとき、`content_for`の出番である。
+例が酷いが、例えば次のようなレイアウトがあったとき、
+
+__app/views/layouts/application.html.erb__
+``` erb
+<% if current_page?(honyararas_path) || current_page?(new_honyarara_path) %>
+  かき氷が安い
+<% end %>
+```
+
+これを`content_for`を使ってまとめると
+
+__app/views/layouts/application.html.erb__
+``` erb
+<%= content_for :banners %>
+```
+
+__app/views/banners/_summer_bargen.html.erb__
+``` erb
+かき氷が安い
+```
+
+__app/views/honyararas/index.html.erb__
+``` erb
+<% content_for :banners do %>
+  <%= render 'banners/summer_bargen' %>
+<% end %>
+```
+
+__app/views/honyararas/new.html.erb__
+``` erb
+<% content_for :banners do %>
+  <%= render 'banners/summer_bargen' %>
+<% end %>
+```
+
+このようにすっきりする。
+
+実際に`render`される場所と、内容を設定する場所が離れてしまうのがちょっと残念なきもちある。
