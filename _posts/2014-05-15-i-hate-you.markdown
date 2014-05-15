@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "あなたがわたしのことを嫌いなのはわたしと関係ない"
+date:   2014-05-15
+categories: diary
+---
+
+## 読みたい本
+面白そう
+
+[同僚から自分の悪口のチャットを誤爆されたので『嫌われる勇気』読みました。 - レールを外れてもまだ生きる - 派遣OLブログ](http://colopon.hateblo.jp/entry/2014/05/13/183926)
+
+1680円ぐらいで元気になれるなら安い。
+
+## カラオケいきたみ
+やっぱいこうかなー
+
+## REST
+[RESTful Web アプリの設計レビューの話](http://www.slideshare.net/t_wada/restful-web-design-review)
+
+## idobata
+`memberships.role`があるっぽい。通常のメンバーだと`regular`でゲストはたぶん`guest`?
+
+## DHH
+[The DHH Problem](http://codon.com/the-dhh-problem)
+
+いい話だった。
