@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "weekend"
+date:   2014-05-16
+categories: diary
+---
+
+## 試したい
+[Magnum CI - Hosted Continuous Integration and Continuous Deployment Platform](https://magnum-ci.com/)
+
+
+```
+$ ssh pi@hanachin-pi.local
+```
+
+
+## Rails
+`ActiveModel::Translation`を`extend`してkeyはnamespaceを`/`で区切る。
+わからんときは`Model.model_name.i18n_key`でわかる。
+
+前に書いたやつ見るとううっ...ってなるので直していきたい。
+
+属性の名前 + 変換したメッセージな感じ。
+属性の名前に対応したキーは一意。
+なのでkeyは同じで属性の名前別なのはできない。
+変換したメッセージのほうでバリエーション頑張るのが必要。
+
+## 文化系ラジオ
+経済的な問題は確かにあるけど他の原因が多い気がする、移動の問題。
+
+ただ、子供のとき移動しまくるのが幸せかというと転勤しまくってるのつらいという話も聞くし微妙なところある。
+
+自分が移動したいときさくっと移動できないのが微妙なんだろうな。
+子供が移動したくなったときに移動出来るような能力を身につけさせるほうがよいのではないか、と思って聞いてた。
+
+聞きながら書いてるからこの後話すのかもしれないけど。
+
+## ひどい
+[2014-05-16 - 弁護士 落合洋司　（東京弁護士会）　の 「日々是好日」](http://d.hatena.ne.jp/yjochi/20140516#1400218482)
+
+## いきたい
+- [ボードゲームサークル「響」2014_0518パーティー - ボードゲームサークル響 | Doorkeeper](http://hibiki-gamers.doorkeeper.jp/events/11394)
+- [ゲームマーケット2014春 直前ボードゲーム会＠沖縄 - アナログゲーム制作コミュニティ＠沖縄 | Doorkeeper](http://agc-okinawa.doorkeeper.jp/events/11543)
+
+## GJ
+[kimihito/magnumci-idobata](https://github.com/kimihito/magnumci-idobata)
+
+## 気になる
+[ジェミノイド特別見学会](http://hil.atr.jp/ja/special_labtour.html)
