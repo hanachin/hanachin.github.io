@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "pootle"
+date:   2014-05-18
+categories: diary
+---
+最近週末Minecraftばかりやってる。
+
+## Pootle試す
+[Installation — Pootle 2.5.1-rc1 documentation](http://pootle.readthedocs.org/en/latest/server/installation.html)でできた
+
+pipでいれたとこのディレクトリで設定とか動くっぽい
+
+## 買いたい
+- [Amazon.co.jp： Joe Celko's Data, Measurements and Standards in SQL (Morgan Kaufmann Series in Data Management Systems): Joe Celko: 洋書](http://www.amazon.co.jp/Measurements-Standards-Kaufmann-Management-Systems/dp/0123747228)
+- [Representing Sex In Databases | SQL And Its Sequels](http://ocelot.ca/blog/blog/2013/09/16/representing-sex-in-databases/)
+
+## Poem
+データエクスポートしとかないとな〜
+
+## Pootle
+意外とさくっとセットアップできる。
+翻訳結果をローカルに反映させるのはどうすればいいんだろう?
+Downloadするのか?(だるいな...)
+
+## Weblate
+次はweblate試す
+
+- [Weblate - ウェブベースの翻訳](http://weblate.org/ja/)
+- [Dirty Sexy Query: オンライン翻訳支援ツールの新星 Weblate](http://dirtysexyquery.blogspot.jp/2013/01/weblate.html)
+
+## Rails 4.2
+入るっぽい: [rails/activejob](https://github.com/rails/activejob)
