@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "RSpec 3"
+date:   2014-05-22
+categories: diary
+---
+
+## あとでよむ
+- [No.119: Install MineCraft Server (Close #27) by yasulab · Pull Request #31 · okinawarb/meetups](https://github.com/okinawarb/meetups/pull/31)
+- [Myron Marston » Notable Changes in RSpec 3](http://myronmars.to/n/dev-blog/2014/05/notable-changes-in-rspec-3)
+- [enokawa/macfriends](https://github.com/enokawa/macfriends)
+- [okinawarb/minecraft-server](https://github.com/okinawarb/minecraft-server)
+
+## 来週やる
+- [エア参加してるときに内部の雰囲気が分かるような自動Ust配信機能的なモノが欲しい · Issue #29 · okinawarb/meetups](https://github.com/okinawarb/meetups/issues/29)
+
+iPod touchでやる
+
+## 技術の再利用性
+Twitter APIのレスポンス結果でメンションとかハッシュタグにリンクはりたいという人が昨日の #okinawarb にきてた。
+そのときはAPIのレスポンスに必要な情報あるからそれで組み立てたらいいじゃんとアドバイスしたんだけど、もっと単純に、gsubで雑に置換するのをおすすめしたほうが良かったかもしれない。
+
+なぜなら
+
+- Rubyの`gsub`の呼び出し方を覚えるのはRuby使うなら何度でも再利用できるし正規表現ならばどの言語でも使える
+- 一方Twitter APIのレスポンスのTweetオブジェクトの形式からindicesとか使ってmentionやハッシュタグやurlを置換するのは、Twitterが滅びればもう使えないし、Twitterが仕様を変更すると使えなくなる
+
+からです。
+
+
+## 米国の愛国者法への関心
+[Anynines · 100% European PaaS - Platform as a service hosting for developers](http://www.anynines.com/)
+
+面白い。
+
+[update anynines deployment guide by FloorD · Pull Request #180 · railsgirls/railsgirls.github.com](https://github.com/railsgirls/railsgirls.github.com/pull/180)
+
+で知った。

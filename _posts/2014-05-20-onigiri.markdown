@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "朝飯にはジューシーおにぎり"
+date:   2014-05-20
+categories: diary
+---
+
+[継続は力になるのか // Speaker Deck](https://speakerdeck.com/eiel/ji-sok-hali-ninarufalseka)
+
+Twitterのユーザー名を適当につけているとタイミングによってまずい
+
+## Weblate
+デフォルトでGit repo置く場所`/var/lib/weblate`なので`GIT_ROOT`環境変数設定してやる。
+
+```
+mkdir ~/my/weblate-git-root
+export GIT_ROOT=~/my/weblate-git-root
+```
+
+設定ファイルコピる。
+Pythonの設定ファイル、ymlではないこと多いな。
+`_example`のサフィックスつける文化なのだろうか。
+
+```
+cp weblate/settings_example.py weblate/settings.py
+```
+
+
+[SysLog config](https://github.com/nijel/weblate/issues/344)の問題に当たった。
+あとLOGGINGのhandlersからsyslogバッサリ消したら`./manage.py`うまく動くようになった。syncdb実行する
+
+とりまfoobarでスーパーユーザーつくる。Django authほにゃららという仕組みがあるっぽい。
+`./manage.py コマンド名`っぽい。migrateとcreateadmin実行する。
+`./manage.py runserver`でDjangoのサーバーあがる。
