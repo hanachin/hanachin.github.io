@@ -1,0 +1,34 @@
+---
+layout: post
+title:  "よさそう"
+date:   2014-05-23
+categories: diary
+---
+
+[コワーキングスペースの利用者からオーナーになりました - Blog.おにぎりたまごうぃんなー](http://blog.obentoba.co/entry/2014/5/22/join-kokemusazu)
+
+## Minecraft
+[hanachin/shyoboi-ddns](https://github.com/hanachin/shyoboi-ddns)というのを作って、ギー沖のIPアドレスをminecraft.hanach.inに割り振るようにした。
+
+## あとでやろ
+
+```
+$ cd ~/my/shyoboi-ddns; git push
+```
+
+## 読みたい
+- [sconover/wrong](https://github.com/sconover/wrong)
+- [environment - オレオレ開発環境まとめ | 随時更新！ - Qiita](http://qiita.com/fakestarbaby/items/c976441e4da88cc52f6a)
+
+## Capybara.add_selectorは超便利だよね
+機能的には同じだけどCSSとかHTMLの構造がバリバリ変わるやつとかに名前をつけておくと、変わった時、そこを操作するテストがいっぱい落ちてもさくっと治せて便利です。
+
+[It’s time to clean up your mess: refactoring Cucumber step definitions - Pat Shaughnessy](http://patshaughnessy.net/2011/10/7/its-time-to-clean-up-your-mess-refactoring-cucumber-step-definitions)
+
+## 写真のとりかた
+[めし日記](http://blog.livedoor.jp/meshi_meshi/)の写真もメシマズ写真家がとると美味しく見えなくなりそう。
+
+まずそうか撮るときに判断してくれたり構図のサジェスト出してくれないと素人困るのでは。
+
+## 便利情報
+[jish/pre-commit](https://github.com/jish/pre-commit)
