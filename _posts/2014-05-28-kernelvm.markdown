@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "kernelvm"
+date:   2014-05-28
+categories: diary
+---
+
+Kernel/VM勉強会おきなわでもあるらしいが、あんなに濃いのか...
+
+## 参考になる
+- [AngularJS 勉強 方法 - ✘╹◡╹✘](http://r7kamura.hatenablog.com/entry/2014/05/28/004508)
+- [idobataやGitHubに寿司ゆきが - はてゆき](http://awayuki.hatenablog.com/entry/2014/05/28/105242)
+- [[wip]設計を修正して、管理者用ページを作りなおす by onionSoup · Pull Request #5 · onionSoup/tea](https://github.com/onionSoup/tea/pull/5#discussion_r13113473)
+- [一人開発を進める上でたった一つの大事なこと - honbin log](http://honbin.hatenablog.com/entry/2014/05/23/205226)
+- [Raw Gemfile on Idobata (master - 5adeddb)](https://gist.github.com/kakutani/43b9f42197ab002fcdf8)
+
+## 欲しい
+- [【朗報】そんなあなたに - hitode909の日記](http://hitode909.hatenablog.com/entry/2014/05/27/225559)
+
+## 便利情報
+[www.yui-rail.co.jp/pdf/info_fc.pdf](http://www.yui-rail.co.jp/pdf/info_fc.pdf)

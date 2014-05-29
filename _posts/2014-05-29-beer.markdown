@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "beer"
+date:   2014-05-29
+categories: diary
+---
+
+最近ビール飲んでない。
+
+## 勉強になる
+- [Twitter / hsbt: @Idobataio rails ...](https://twitter.com/hsbt/status/471627683428708352)
+- [Support OAuth signin&signup · caea2c4 · genuineblue/rails4.1](https://github.com/genuineblue/rails4.1/commit/caea2c49b07bdd92714581f9ca4420a8e2fd421a#diff-cbbb643d4b8a20efaa476e8e64b13232R1)
+- [7 reasons why I'm sticking with Minitest and Fixtures in Rails | Brandon Hilkert](http://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/#.U4Ypj4RIk_0.twitter)
+- [Avoid Rails When Generating JSON responses with PostgreSQL](http://reefpoints.dockyard.com/2014/05/27/avoid-rails-when-generating-json-responses-with-postgresql.html)

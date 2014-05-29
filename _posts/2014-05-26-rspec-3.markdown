@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "RSpec 3"
+date:   2014-05-26
+categories: diary
+---
+
+めちゃ変更点あるけど2.99の時点で対処すれば問題ないっぽい。
+
+[Myron Marston » Notable Changes in RSpec 3](http://myronmars.to/n/dev-blog/2014/05/notable-changes-in-rspec-3)
+
+それにしても量が多い。
+
+## 体力と知的生産性
+事故や病気の場合、プログラミング書くのに必要な能力ってどれぐらい残るのかな。
+
+
+## Dockerアツい
+[Dockerに最適化したOSイメージをGoogle Compute Engineが提供開始。CoreOSも利用可能に － Publickey](http://www.publickey1.jp/blog/14/dockerosgoogle_compute_enginecoreos.html)
+
+slice and diceは薄くきって角切り!!
