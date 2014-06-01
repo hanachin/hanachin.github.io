@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "pandoc"
+date:   2014-05-30
+categories: diary
+---
+
+- [HTML - 多様なフォーマットに対応！ドキュメント変換ツールPandocを知ろう - Qiita](http://qiita.com/sky_y/items/80bcd0f353ef5b8980ee)
+
+`brew install pandoc`めっちゃ時間かかる。
+
+
+## Error Page
+- [Railsの404,500エラーページをカスタマイズ - Qiita](http://qiita.com/mr-myself/items/c2f4fb2e5dcee6a336f3#comment-23298b703d75b7d27487)
+- [yuki24/rambulance](https://github.com/yuki24/rambulance)
+
+gem化素晴らしい。
+
+## きになる
+- [develop ブランチなんてオワコン - Togetterまとめ](http://togetter.com/li/673629)
+- [Enable `.clean_with` to receive simple arguments by deeeki · Pull Request #18 · amatsuda/database_rewinder](https://github.com/amatsuda/database_rewinder/pull/18)
+- [taea/ktra](https://github.com/taea/ktra)
+- [jgraichen/gurke at develop](https://github.com/jgraichen/gurke/tree/develop)
+
+## Minecraft Pi
+- [pilliq/scratchpy](https://github.com/pilliq/scratchpy)
+- [nhajratw/minecraft_api](https://github.com/nhajratw/minecraft_api)
+- [scratch2mcpi/scratch2mcpi](https://github.com/scratch2mcpi/scratch2mcpi)
