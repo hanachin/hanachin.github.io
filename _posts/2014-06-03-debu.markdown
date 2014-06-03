@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "デブった"
+date:   2014-06-03
+categories: diary
+---
+
+以前の水準に戻りつつあるカロリー摂取量、へりつつある運動量、そう肥満。
+
+## 気になる
+- [Rubyのまつもとゆきひろ氏、iQON運営のVASILY技術顧問に就任 - THE BRIDGE](http://thebridge.jp/2014/06/ruby-matz-joins-iqon-running-company-vasily-as-a-technology-adviser)
+- [「IT奴隷化に反旗を翻そう」 VASILY技術顧問 まつもとゆきひろ氏インタビュー | VASILY DEVELOPERS BLOG](http://tech.vasily.jp/2014/06/vasily_matz/)
+- [HerokuのつくってるAPI関係の便利なやつ - ✘╹◡╹✘](http://r7kamura.hatenablog.com/entry/2014/06/03/105041)
+- [mtsmfm/hubot-test-helper](https://github.com/mtsmfm/hubot-test-helper)
+- [esminc/seory](https://github.com/esminc/seory/tree/master)
