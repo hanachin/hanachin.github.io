@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "ビール美味しい"
+date:   2014-06-09
+categories: diary
+---
+
+## 気になる
+- [全てがJSONになる - ✘╹◡╹✘](http://r7kamura.hatenablog.com/entry/2014/06/10/023433)
+- [pjax を利用したサイト向けの Chrome Extension の書き方 - @kyanny's blog](http://blog.kyanny.me/entry/2014/06/09/233708)
+- [npmのあまり知られてない機能 10選 - from scratch](http://yosuke-furukawa.hatenablog.com/entry/2014/06/10/100410)
+- [Change data in migrations like a boss](http://railsguides.net/2014/01/30/change-data-in-migrations-like-a-boss/)
+
+## ビール飲む活動
+縮小したい。
