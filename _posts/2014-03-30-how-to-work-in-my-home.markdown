@@ -2,7 +2,7 @@
 layout: post
 title:  自室で作業するコツ
 date:   2014-03-30
-categories:  categories.join(',') =>
+categories: blog
 ---
 
 - [K Nishijimaのぶろぐ: リモートワークと地方の給与水準について](http://k-nishijima.blogspot.jp/2014/03/remote.html)
