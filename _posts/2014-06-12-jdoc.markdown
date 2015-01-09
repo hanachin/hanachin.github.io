@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "jdocに雑にプルリクしたら更に改良されててめでたかった"
+date:   2014-06-12
+categories: diary
+---
+
+`null`、ありそ〜と思いつつもスルーしたりテストにいい感じのパラメータ思いつかなかったんでとりま適当にPull Request送った。
+その後`null`対応して`false`もばっちりテストケース書かれていて非常にめでたかった。
+
+コードも英語もまだまだ書けないしどんどんかこうと思いました。(小並感)
+
+## 便利情報
+- [npmのあまり知られてない機能 10選 - from scratch](http://yosuke-furukawa.hatenablog.com/entry/2014/06/10/100410)
+- [Git - 英語コミットコメントに使えるオシャレフレーズ集 - Qiita](http://qiita.com/ken_c_lo/items/4cb49f0fb74e8778804d)
+
+## 気になる
+- [thoughtbot/hound](https://github.com/thoughtbot/hound)
+- [RSpec 3対応](https://github.com/petergoldstein/active_admin/commit/181381da8b6fb830ef2e24b9f6bfe88df437d28c#diff-57013262a6cdf1f0f6cb2c64aa762c68R31)
+- [iOSアプリを170倍高速化できた２つの意外な盲点 | nanapi TechBlog](http://nanapi.co.jp/blog/2014/06/11/ios_answer_high_speed_technique/?fb_action_ids=884009654947210&fb_action_types=og.likes)
+
+## ruboty-yammerが欲しい
+- [Realtime | Yammer Developer](https://developer.yammer.com/realtime/)
+
+## いとこ
+Cousins!!!ってメッセージ来てたけど何かあったのか。卒業したのかな?と思ったら日本来るっぽい。英語力ないと会話つらそう。

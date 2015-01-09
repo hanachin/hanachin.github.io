@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "hi vue"
+date:   2014-06-12
+categories: diary
+---
+
+いとことチャットしてたらvue触る時間が--
+
+## 気になる
+- [Ruby - ワンライナーWebサーバを集めてみた - Qiita](http://qiita.com/sudahiroshi/items/e74d61d939f18779970d)
+- [Category Testing](http://c2.com/cgi/wiki?CategoryTesting)
+- [地球を守るために、虫を食べる」：昆虫食の普及に取り組む「地球少年」篠原祐太氏が熱すぎる : まだ東京で消耗してるの？](http://www.ikedahayato.com/20140612/7986261.html)
+  - うまそう。イケハヤ氏いい記事だ。
+
+## いい
+- [Rails API Testing Best Practices With RSpec](http://matthewlehner.net/rails-api-testing-guidelines/)
+- [Rails でつくる API のテストの書き方（RSpec + FactoryGirl） - 彼女からは、おいちゃんと呼ばれています](http://blog.inouetakuya.info/entry/2013/10/27/200111)
+- [2600の単熟語をたった2か月で覚えるDUO3.0の使い方](http://ty-method.com/duo30)
+
+Turnipで書けば読みやすい分かりやすいアプローチしてたけど複数回のコール組み合わせるの難しすぎて、陥落。request spec書かなくてごめんなさいという気持ち。
+今日からいっぱい書いてる。
