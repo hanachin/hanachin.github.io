@@ -10,6 +10,7 @@ categories: post
 - [Bug #10706: Segmentation fault when change visibility of refined new method - ruby-trunk - Ruby Issue Tracking System](https://bugs.ruby-lang.org/issues/10706)
 - [Bug #10707: Segmentation fault when get refined new method in BasicObject - ruby-trunk - Ruby Issue Tracking System](https://bugs.ruby-lang.org/issues/10707)
 - [Comparing 759a31b...3f8ceab · ruby/ruby](https://github.com/ruby/ruby/compare/ruby:759a31b...ruby:3f8ceab)
+- [ruby-trunk-changes r49173 - r49185 - PB memo](http://d.hatena.ne.jp/nagachika/20150108/ruby_trunk_changes_49173_49185)
 
 ## 経緯
 
