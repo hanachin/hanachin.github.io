@@ -1,0 +1,94 @@
+---
+layout: post
+title:  "zshする"
+date:   2015-05-22
+categories: post
+---
+
+# Zshをはじめたい
+
+[Zsh](http://www.zsh.org/)をはじめる != [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)をはじめる。
+
+## まとめ
+
+以下ちょっとだけメモったけど毎回ググりそう。
+
+はじめるのは簡単だけど設定書いても使わないこととか、
+設定書き続けない(満足してしまう、不便さになれる)ことが多いんだよな。
+
+育てていきたい。
+
+## 使うzshはこちら
+
+Yosemiteに最初から入ってるやつ。
+
+```console
+Nil% zsh --version
+zsh 5.0.5 (x86_64-apple-darwin14.0)
+```
+
+## Yosemiteでzshをログインシェルとして使う
+
+最初から入っている。
+
+``` console
+$ sudo chsh -s /bin/zsh your_user_name
+```
+
+## zsh設定ファイルの書き方
+
+人の便利`.zshrc`をパクる。
+
+## zsh設定ファイルの読み方
+
+人の便利`.zshrc`をパクるためには人の`.zshrc`を読まないといけない。
+人の便利`.zshrc`に書かれている内容を理解するためにはマニュアルを読めばよい。
+`man zsh`するとオーバービューが見れる。
+
+- `autoload`などのビルトイン関数は`man zshbuiltins`
+- `HISTSIZE`など環境変数は`zshparam`
+
+`zshall`に全部入っているので、面倒くさい人は`man zshall`で見よう。
+
+## 設定ファイルでよく現れる書き方
+
+### 環境変数`fpath`
+
+関数が探索されるパス。
+自分で書いた関数定義ファイルなどを突っ込んでおくディレクトリを書く。
+
+### `autoload`
+
+仕組みは`zshmisc`に載っている。
+オプションは`zshbuiltins`に載っている。
+
+#### `-U`オプション
+
+指定したファイルをコンパイルする際に`alias`を展開しない。
+指定したファイル中で意図せず`alias`で上書きしたコマンドが使われてしまうのを防げる。
+
+#### `-z`オプション
+
+`-k`と対を成しているオプション。
+`autoload`でロードする関数をkshスタイルで書く場合は`-k`、zshスタイルなら`-z`指定しておく。
+
+```console
+% cat > hello
+func hello() { print hello }
+% fpath=(`pwd` $fpath)
+% autoload -Uz hello
+% hello
+% hello
+hello
+% unfunction hello
+% autoload -Uk hello
+% hello
+hello
+% hello
+hello
+```
+
+#### よく読み込まれてるやつ
+
+- `colors`: `man zshcontrib`とか見ると分かる。色定義してくれるやつ。
+- `compinit`: 補完。`zshcompsys`に載ってる。
