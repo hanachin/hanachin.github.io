@@ -1,5 +1,5 @@
 source 'https://rubygems.org/'
 gem 'github-pages'
-gem 'pygments.rb'
 gem 'rake'
 gem 'redcarpet'
+gem 'rouge'
