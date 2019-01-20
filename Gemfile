@@ -1,5 +1,5 @@
 source 'https://rubygems.org/'
 gem 'github-pages'
+gem 'kramdown'
 gem 'rake'
-gem 'redcarpet'
 gem 'rouge'
