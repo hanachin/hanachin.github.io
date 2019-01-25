@@ -1,3 +1,8 @@
 name: ღゝ◡╹)ノ♡ hanach.in
 markdown: kramdown
 highlighter: rouge
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - Rakefile
